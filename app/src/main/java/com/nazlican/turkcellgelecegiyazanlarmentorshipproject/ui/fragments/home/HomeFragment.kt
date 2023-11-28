@@ -1,13 +1,11 @@
-package com.nazlican.turkcellgelecegiyazanlarmentorshipproject.ui.home
+package com.nazlican.turkcellgelecegiyazanlarmentorshipproject.ui.fragments.home
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.viewbinding.ViewBinding
 import com.google.android.material.snackbar.Snackbar
 import com.nazlican.turkcellgelecegiyazanlarmentorshipproject.R
 import com.nazlican.turkcellgelecegiyazanlarmentorshipproject.comman.viewBinding
@@ -36,6 +34,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 simpsonAdapter.notifyDataSetChanged()
             } else {
                 Snackbar.make(requireView(), "liste boş", Snackbar.LENGTH_LONG).show()
+                Log.d("nazli","liste bos")
             }
         }
     }

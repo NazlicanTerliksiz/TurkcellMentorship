@@ -1,4 +1,4 @@
-package com.nazlican.turkcellgelecegiyazanlarmentorshipproject.ui.home
+package com.nazlican.turkcellgelecegiyazanlarmentorshipproject.ui.fragments.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
