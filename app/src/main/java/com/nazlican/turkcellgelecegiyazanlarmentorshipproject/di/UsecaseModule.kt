@@ -1,6 +1,6 @@
 package com.nazlican.turkcellgelecegiyazanlarmentorshipproject.di
 
-import com.nazlican.turkcellgelecegiyazanlarmentorshipproject.data.repo.HomeRepository
+import com.nazlican.turkcellgelecegiyazanlarmentorshipproject.data.source.remote.SimpsonsQuoteService
 import com.nazlican.turkcellgelecegiyazanlarmentorshipproject.domain.SimpsonUsecase
 import dagger.Module
 import dagger.Provides
@@ -10,8 +10,10 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-object RepositoryModule{
+object UsecaseModule {
+
     @Provides
     @Singleton
-    fun provideHomeRepository(simpsonUsecase: SimpsonUsecase) = HomeRepository(simpsonUsecase)
+    fun provideSimpsonUsacase(simpsonsQuoteService: SimpsonsQuoteService) = SimpsonUsecase(simpsonsQuoteService)
+
 }

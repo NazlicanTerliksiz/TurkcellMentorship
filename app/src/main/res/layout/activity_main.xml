@@ -6,13 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <TextView
-        android:id="@+id/nazlican"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="nazlican"/>
-
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_graph"
         android:name="androidx.navigation.fragment.NavHostFragment"
